@@ -5,5 +5,5 @@ x = int(input())
 
 def diviblesMenoresN(lista,divisor):
    return list(filter(lambda x: x % divisor == 0, lista))
-
+#comment
 print(*diviblesMenoresN(range(1,n),x),sep='\n')
