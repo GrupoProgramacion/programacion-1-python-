@@ -41,3 +41,17 @@ def toString(n):
     
 print(toString(x))
 
+def esmult(x,y):
+    if x % y == 0 :
+        return True
+    else :
+        return False
+
+def mainMultiploAdeB(x,y):
+    if esmult(x,y) == True :
+        return str(x) + " es multiplo de " + str(y)
+    else :
+        return str(x) + " no es multiplo de " + str(y)
+
+print(mainMultiploAdeB(int(input()),int(input())))
+
