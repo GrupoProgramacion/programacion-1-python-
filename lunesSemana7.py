@@ -1,16 +1,16 @@
-# promedio
 from functools import reduce 
 
-n = int(input())
-x = list(map(lambda x: int(input()), range(1,n+1)))
+def mainPromedio():
+    n = int(input())
+    x = list(map(lambda x: int(input()), range(1,n+1)))
+    promedio = reduce(lambda x , y : (x + y )/ 2, x)
+    
+    print(max(x))
+    print(min(x))
+    print(int(round(promedio,0)))
+    
+#mainPromedio()
 
-promedio = reduce(lambda x , y : (x + y )/ 2, x)
-
-print(max(x))
-print(min(x))
-print(int(round(promedio,0)))
-
-#PY1_Elif
 def toString(n):
     if n == 0:
         return "cero"
@@ -36,8 +36,9 @@ def toString(n):
         return "diez"
     else: 
         return "número no válido"
-    
-print(toString(x))
+
+#PY1_Elif
+#print(toString(x))
 
 def esmult(x,y):
     if x % y == 0 :
@@ -51,7 +52,7 @@ def mainMultiploAdeB(x,y):
     else :
         return str(x) + " no es multiplo de " + str(y)
 
-print(mainMultiploAdeB(int(input()),int(input())))
+#print(mainMultiploAdeB(int(input()),int(input())))
 
 def validInput():
     out = int(input())
@@ -71,5 +72,5 @@ def Dibujar(ancho,largo,borde,fondo):
                 print(fondo)
     print("\n")
                
-Dibujar(validInput(),validInput(),input(),input())
+#Dibujar(validInput(),validInput(),input(),input())
 
