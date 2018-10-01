@@ -10,3 +10,34 @@ print(max(x))
 print(min(x))
 print(int(round(promedio,0)))
 
+x = int(input())
+
+#PY1_Elif
+def toString(n):
+    if n == 0:
+        return "cero"
+    elif n == 1:
+        return "uno"
+    elif n == 2:
+        return "dos"
+    elif n == 3:
+        return "tres"
+    elif n == 4:
+         return "cuatro"
+    elif n == 5:
+         return "cinco"
+    elif n == 6:
+         return "seis"
+    elif n == 7:
+         return "siete"
+    elif n == 8:
+         return "ocho"
+    elif n == 9:
+        return "nueve"
+    elif n == 10:
+        return "diez"
+    else: 
+        return "número no válido"
+    
+print(toString(x))
+
