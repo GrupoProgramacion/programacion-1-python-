@@ -55,3 +55,23 @@ def mainMultiploAdeB(x,y):
 
 print(mainMultiploAdeB(int(input()),int(input())))
 
+def validInput():
+    out = int(input())
+    
+    if out >= 3 :
+        return out
+    else :
+        print("Error al ingresar los datos")
+        raise SystemExit
+        
+def Dibujar(ancho,largo,borde,fondo):
+    for y in range(0,ancho):
+        for x in range(0,largo):
+            if y == 0 or y == ancho :
+                print(borde)
+            else:
+                print(fondo)
+    print("\n")
+               
+Dibujar(validInput(),validInput(),input(),input())
+
