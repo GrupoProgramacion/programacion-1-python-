@@ -10,8 +10,6 @@ print(max(x))
 print(min(x))
 print(int(round(promedio,0)))
 
-x = int(input())
-
 #PY1_Elif
 def toString(n):
     if n == 0:
