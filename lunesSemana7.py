@@ -1,9 +1,10 @@
+# promedio
 from functools import reduce 
 
 def mainPromedio():
     n = int(input())
-    x = list(map(lambda x: int(input()), range(1,n+1)))
-    promedio = reduce(lambda x , y : (x + y )/ 2, x)
+    x = list(map(lambda x: int(input()), range(n)))
+    promedio = reduce(lambda x , y : (x + y), x) / len(x)
     
     print(max(x))
     print(min(x))
